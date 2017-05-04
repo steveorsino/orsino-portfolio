@@ -4,10 +4,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap - Prebuilt Layout</title>
+<title>Portfolio | Stephen Orsino</title>
 
 <!-- Bootstrap -->
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+ 
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+  <script src="js/functions.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,71 +21,164 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<nav class="navbar navbar-default">
+<body onload="loader()">
+<div id="loader">
+  <img id="heart" class="center-block" src="images/tealheart.png" height="175" width="240" alt="heart" />
+</div>
+<div id="main" style="display:none;">
+<nav class="navbar navbar-default navbar-fixed-top mynavbar">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="#">Brand</a></div>
+     </div>
+     <!--
+     <ul class="nav navbar-nav navbar-left">
+        <li><img src="images/icon.png" alt="My Logo" width="75" height="auto"></li>
+      </ul>
+      -->
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      
+      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+       <li class="behance"><a href="#"><img src="images/behance.png" width="48"></a></li>
+       <li><a href="#"><img src="images/linkedin.png" width="35"></a></li>
+        <li><a href="#"><img src="images/github.png" width="35"></a></li>
+        
+        
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
   </div>
   <!-- /.container-fluid --> 
 </nav>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h1 class="text-center">Bootstrap with Dreamweaver</h1>
-    </div>
-  </div>
-  <hr>
-</div>
+
+
 <div class="container">
   <div class="row text-center">
-    <div class="col-md-6 col-md-offset-3">Click outside the blue container to select this <strong>row</strong>. Columns are always contained within a row. <strong>Rows are indicated by a dashed grey line and rounded corners</strong>. </div>
+    <div class="col-xs-12 embeddevden">
+    </div>
   </div>
-  <hr>
-  <div class="row">
-    <div class="text-justify col-sm-4"> Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line. </div>
-    <div class="col-sm-4 text-justify"> You can <strong>resize a column</strong> using the handle on the right. Drag it to increase or reduce the number of columns.</div>
-    <div class="col-sm-4 text-justify"> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
+  <div class="row text-center mysectionheading">
+    <div class="col-xs-12">
+      <h1>Bio</h1>
+    </div>
   </div>
+  <div class="row bottomspace">
+    <div class="col-sm-4 text-justify">
+      <div class="mybox">
+      </div>
+    </div>
+    <div class="col-sm-8 text-justify">
+      <div class="mybox">
+      </div>
+    </div>
+  </div>
+  <div class="row text-center mysectionheading">
+    <div class="col-xs-12">
+      <h1>Web Development</h1>
+    </div>
+  </div>
+    <div class="row bottomspace">
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line.
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mysectionheading">
+      <div class="col-xs-12">
+        <h1>Graphic Design</h1>
+      </div>
+    </div>
+    <div class="row bottomspace">
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line.
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mysectionheading">
+      <div class="col-xs-12">
+        <h1>Other Projects</h1>
+      </div>
+    </div>
+    <div class="row bottomspace">
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line.
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+      <div class="col-sm-4 text-justify">
+        <div class="mybox">
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mysectionheading">
+      <div class="col-xs-12">
+        <h1>Contact Me</h1>
+      </div>
+    </div>
+<!--    <div class="container">-->
+    <div class="row bottomspace">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password:</label>
+          <div class="col-sm-10"> 
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          </div>
+        </div>
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--
+    <div class="row text-center">
+      <div class="col-md-6 col-md-offset-3">Click outside the blue container to select this <strong>row</strong>. Columns are always contained within a row. <strong>Rows are indicated by a dashed grey line and rounded corners</strong>. </div>
+    </div>
+     <div class="row">
+      <div class="text-justify col-sm-4"> Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line. </div>
+      <div class="col-sm-4 text-justify"> You can <strong>resize a column</strong> using the handle on the right. Drag it to increase or reduce the number of columns.</div>
+      <div class="col-sm-4 text-justify"> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
+    </div>
+  <!--
   <hr>
   <div class="row">
     <div class="text-center col-md-12">
@@ -108,19 +206,37 @@
       </div>
     </div>
   </div>
-  <hr>
-  <div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-      <h4>Footer </h4>
-      <p>Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="http://yourwebsite.com/" >My Website</a></p>
+</div>
+
+<div class="row">
+      <div class="text-center col-md-6 col-md-offset-3">
+        <img class="steve" src="images/steve.svg" width="" alt="steve"/>
+      </div>
+    
+    -->
     </div>
-  </div>
-  <hr>
+  <footer>
+    <div class="row">
+      <div class="text-center col-md-6 col-md-offset-3">
+        <img src="images/SO1.png" width="30%" alt="My Logo">
+      </div>
+    </div>
+
+    <div class="row">
+     <div class="col-md-6">
+       <img src="images/signature.png" alt="Stephen Orsino" width="200">
+      </div>
+      <div class="text-center col-md-6 col-md-offset-3">
+        <p>Copyright &copy; 2017 &middot; All Rights Reserved </p>
+      </div>
+    </div>
+  </footer>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-1.11.3.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+  
 </body>
 </html>
